@@ -1,18 +1,35 @@
 {
   "expo": {
-    "name": "Unlocked_Maps",
-    "slug": "Unlocked_Maps",
+    "name": "HexWalk",
+    "slug": "hexwalk",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "unlockedmaps",
-    "userInterfaceStyle": "automatic",
+    "scheme": "hexwalk",
+    "userInterfaceStyle": "dark",
     "ios": {
-      "icon": "./assets/expo.icon"
+      "supportsTablet": false,
+      "bundleIdentifier": "com.ranuk.hexwalk",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "HexWalk necesita acceder a tu ubicación para registrar los hexágonos que desbloqueas al caminar.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "HexWalk necesita acceder a tu ubicación en segundo plano para continuar registrando tus caminatas y desbloqueando el mapa.",
+        "NSLocationAlwaysUsageDescription": "HexWalk necesita acceder a tu ubicación en segundo plano para registrar tus caminatas y desbloqueando el mapa.",
+        "UIBackgroundModes": [
+          "location"
+        ]
+      }
     },
     "android": {
+      "package": "com.ranuk.hexwalk",
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "FOREGROUND_SERVICE",
+        "FOREGROUND_SERVICE_LOCATION"
+      ],
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#121214",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
@@ -28,7 +45,7 @@
       [
         "expo-splash-screen",
         {
-          "backgroundColor": "#208AEF",
+          "backgroundColor": "#121214",
           "android": {
             "image": "./assets/images/splash-icon.png",
             "imageWidth": 76
