@@ -70,12 +70,12 @@ npx expo start --lan
 ### 3. Probar en Celular Físico (Nativo)
 *   Descarga la app **Expo Go** desde Google Play (Android) o App Store (iOS).
 *   Asegúrate de que tu computadora y tu celular estén en la **misma red Wi-Fi**.
-*   Obtén la dirección IP local de tu máquina ejecutando el servidor (ej: `192.168.1.147`).
+*   Obtén la dirección IP local de tu máquina ejecutando el servidor (ej: `<TU_IP_LOCAL>`).
 *   En **Expo Go**, presiona *"Enter URL manually"* y escribe:
     ```
     exp://TU_DIRECCION_IP:8081
     ```
-    *(Por ejemplo: `exp://192.168.1.147:8081`)*
+    *(Por ejemplo: `exp://<TU_IP_LOCAL>:8081`)*
 *   El código se descargará directamente en tu móvil y podrás probar los sensores reales (GPS y pasos) y las vibraciones físicas.
 
 ---
